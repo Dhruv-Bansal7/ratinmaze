@@ -10,7 +10,7 @@ const RatInMaze = (grid,x,y,N) => {
     arr.push(element);
   }
   arr.sort();
-  if(possiblePaths.size == 0) {
+  if(possiblePaths.size === 0) {
     return null;
   }
   return arr;
@@ -25,7 +25,7 @@ const solve = (grid,x,y,n,vis,path) => {
         possiblePaths.add(path)
         return;
     }
-    if(vis[x][y]  == 1) {
+    if(vis[x][y]  === 1) {
         return;
     }
 
@@ -63,10 +63,10 @@ const matrix = (N) => {
 }
 const isSafe = (row,col,grid,n,visited) => {
     if(
-        row == -1 ||
-        row == n ||
-        col == -1 ||
-        col == n ||
+        row === -1 ||
+        row === n ||
+        col === -1 ||
+        col === n ||
         visited[row][col] ||
         grid[row][col].isWall
     )
