@@ -7,6 +7,18 @@ const Ratvis = () => {
     });
 
     const [gridSize,setGridSize] = useState(6);
+    
+    const generateGrid = (size) => {
+        let grid = []
+        for (let row = 0; row < size; row++) {
+            let temp = []
+            for (let col = 0; col < size; col++) {
+                temp.push(createNode(row, col))
+            }
+            grid.push(temp);
+        }
+        return grid;
+    }
 
 
     useEffect(() => {
@@ -22,18 +34,7 @@ const Ratvis = () => {
             isPath: false,
         };
     }
-    const generateGrid = (size) => {
-        let grid = []
-        for (let row = 0; row < size; row++) {
-            let temp = []
-            for (let col = 0; col < size; col++) {
-                temp.push(createNode(row, col))
-            }
-            grid.push(temp);
-        }
-        return grid;
-    }
-
+    
 
     const handleMouseUp = (row, col) => {
         const newGrid = state.grid.slice();
