@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main p{
+  text-align: center;
+}
+.node {
+  border: 1px solid black;
+  padding: 2rem;
+  min-width: 10px;
+}
+.nodeStart{
+  background-image: url(https://w1.pngwing.com/pngs/278/546/png-transparent-cartoon-mouse-cartoon-drawing-muroidea-nose-technology-rat-whiskers-thumbnail.png);
+  /* background-image: url(https://st2.depositphotos.com/3079665/5408/v/600/depositphotos_54089413-stock-illustration-smiling-rat.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.nodeFinish {
+  background-image: url(https://img.lovepik.com/original_origin_pic/19/01/04/d2eb59134b104d6d507f0d49dd418e9e.png_wh860.png);
+  /* background-image: url(https://img.freepik.com/premium-vector/cheese-cartoon_22350-99.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nodeWall{
+  background-color: red;
+}
+.nodePath{
+  background-color: green;
+}
+.main h1 {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+.rat{
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 20px;
+}
+.btn:hover {
+  background-color: rgb(70, 70, 255);
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main h1 {
+    font-size: 30px;
+  }
+  .node {
+    padding: 1rem;
+  }
+  .nodeStart {
+    background-size: 32px;
+  }
+}
